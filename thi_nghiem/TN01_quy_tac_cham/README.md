@@ -53,6 +53,9 @@ Mỗi lần chạy có file `test_nham_last.npz` = ma trận nhầm lẫn **củ
 | 4 | *(Tùy chọn – Mân quyết)* Train lại `tb` seed 0 trên Kaggle, xem có ra gần 64,27 không (lệch ≤ 1,2) | ~2,6 h GPU |
 | 5 | Gửi phiếu (mục 7): trả lời ngay dưới [issue #1](https://github.com/dthanhman/sage-research/issues/1) | ~5 phút |
 
+**File kết quả:** đính kèm vào bình luận trong issue – `chay_lai.txt` (chữ in ra của việc 1), và nếu làm việc 4 thì `.zip` thư mục run
+(không gửi file `.pt`). Mân lưu vào [`kiem_thu/`](kiem_thu/).
+
 **Lệnh cho việc 1** (cần Python có numpy, pandas):
 
 ```bash

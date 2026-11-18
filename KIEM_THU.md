@@ -64,7 +64,18 @@ nhưng phải nằm trong **dao động seed**: lệch so với số của ngư�
 - Kết luận: ĐỒNG Ý / CẦN SỬA (…)
 ```
 
-## 6. Sau khi có phiếu – lưu kết quả trên repo
+## 6. File kết quả của người kiểm
+
+Người kiểm **đính kèm file vào bình luận trong Issue** (kéo thả vào ô bình luận, GitHub nhận `.txt`, `.zip`):
+
+| Việc | File gửi |
+|---|---|
+| Chạy lại từ output | Toàn bộ chữ in ra màn hình, lưu thành `chay_lai.txt` (vd `python so_sanh_cap.py ... > chay_lai.txt`) |
+| Train lại 1 seed (nếu làm) | Nén thư mục run thành `.zip`, chỉ gồm `config.json`, `log.csv`, `test_ket_qua_last.json`, `test_iou_lop_last.csv`, `test_nham_last.npz` (không gửi checkpoint `.pt`) |
+
+Người làm tải về, lưu vào `thi_nghiem/TNxx_*/kiem_thu/<tên người kiểm>/`, commit kèm link Issue.
+
+## 7. Sau khi có phiếu – lưu kết quả trên repo
 
 **Nếu ĐỒNG Ý:**
 1. Người làm chép phiếu vào mục "Phiếu kiểm" trong README thí nghiệm, ghi link Issue.
