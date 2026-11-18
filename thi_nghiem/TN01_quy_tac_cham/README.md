@@ -1,4 +1,4 @@
-# TN01 – Kiểm "cây thước" trước khi đo
+# TN01 – Quy tắc chấm mIoU và công cụ so sánh
 
 Người làm: Mân · Người kiểm: **Lộc Lớn** · Ngày: 18/11/2026 · Hạn kiểm: …
 
@@ -11,8 +11,8 @@ TN01 làm 2 việc:
 1. **Đặt luật** khi nào được nói "A hơn B" → [QUY_TAC_CHAM.md](../../QUY_TAC_CHAM.md).
 2. **Viết công cụ** tự tính theo luật đó → [`code/so_sanh_cap.py`](../../code/so_sanh_cap.py), và thử nó trên kết quả đã có.
 
-TN01 **không đo phương án mới nào**. Nó kiểm cây thước trước khi dùng thước để đo. Mọi phương án cải tiến sau này đều
-chấm bằng luật + công cụ này, nên cần người khác xác nhận **trước** khi có kết quả cải tiến.
+TN01 **không đo phương án mới nào**. Mọi phương án cải tiến sau này đều chấm bằng luật + công cụ này,
+nên cần người khác xác nhận **trước** khi có kết quả cải tiến.
 
 ## 2. Luật (tóm tắt)
 
