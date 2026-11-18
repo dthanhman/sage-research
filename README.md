@@ -50,4 +50,4 @@ Trên Windows cần `PYTHONUTF8=1` (in tiếng Việt).
 
 | Mã | Nội dung | Người làm | Người kiểm | Trạng thái |
 |---|---|---|---|---|
-| [TN01](thi_nghiem/TN01_quy_tac_cham/) | Quy tắc chấm + script so cặp seed, kiểm trên B3 test (vis, tb, sage, nosam, ir × 3 seed) | Mân | Lộc Lớn | Chờ kiểm |
+| [TN01](thi_nghiem/TN01_quy_tac_cham/) | Quy tắc chấm + script so cặp seed, kiểm trên B3 test (vis, tb, sage, nosam, ir × 3 seed) | Mân | Lộc Lớn | Chờ kiểm ([issue #1](https://github.com/dthanhman/sage-research/issues/1)) |
