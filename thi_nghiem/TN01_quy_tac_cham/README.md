@@ -50,10 +50,10 @@ Mỗi lần chạy có file `test_nham_last.npz` = ma trận nhầm lẫn **củ
 | 1 | Chạy lại công cụ (lệnh bên dưới), so với kết quả đúng ở mục 5 | ~5 phút |
 | 2 | Đọc luật, trả lời 5 câu hỏi ở mục 6 | ~20 phút |
 | 3 | Đọc code: hàm `muc()` và phần bootstrap trong `so_sanh_cap.py`, hàm `cac_miou()` trong `chung.py` | ~20 phút |
-| 4 | *(Tùy chọn – Mân quyết)* Train lại `tb` seed 0 trên Kaggle, xem có ra gần 64,27 không (lệch ≤ 1,2) | ~2,6 h GPU |
+| 4 | Train `tb` **seed 3** trên Kaggle theo lệnh ở cuối file. Đạt nếu ra trong khoảng **63,2 – 65,6** (TB 3 seed cũ 64,42 ± 2 × 0,60). Kết quả này vừa kiểm tái lập, vừa dùng làm 1 trong 5 seed của vòng chốt | ~2,6 h GPU |
 | 5 | Gửi phiếu (mục 7): trả lời ngay dưới [issue #1](https://github.com/dthanhman/sage-research/issues/1) | ~5 phút |
 
-**File kết quả:** đính kèm vào bình luận trong issue – `chay_lai.txt` (chữ in ra của việc 1), và nếu làm việc 4 thì `.zip` thư mục run
+**File kết quả:** đính kèm vào bình luận trong issue – `chay_lai.txt` (chữ in ra của việc 1), và `.zip` thư mục run của việc 4
 (không gửi file `.pt`). Mân lưu vào [`kiem_thu/`](kiem_thu/).
 
 **Lệnh cho việc 1** (cần Python có numpy, pandas):
@@ -93,7 +93,7 @@ mIoU trung bình 3 seed (273 ảnh): tb 64,42 · nosam 63,81 · sage 63,37 · vi
 - Việc 1 – chạy lại: khớp / không khớp (…)
 - Việc 2 – 5 câu hỏi: 1 … / 2 … / 3 … / 4 … / 5 …
 - Việc 3 – đọc code: không thấy lỗi / lỗi: …
-- Việc 4 – train lại: không làm / ra …, lệch … → đạt / không đạt
+- Việc 4 – tb seed 3: ra …, trong khoảng 63,2 – 65,6? → đạt / không đạt
 - Kết luận: **ĐỒNG Ý** / **CẦN SỬA** (…)
 
 ---
@@ -106,12 +106,12 @@ mIoU trung bình 3 seed (273 ảnh): tb 64,42 · nosam 63,81 · sage 63,37 · vi
 - **Hơn nhất quán** = trung bình hiệu > 0, mọi seed hiệu > 0, cận dưới CI ảnh > 0. **Hơn chắc chắn** = cận dưới CI ảnh + seed > 0.
 - **SegFormer-B3** (`nvidia/mit-b3`): train 1.220 ảnh (`manifests/fmb_goc`, `--gop_dev`), 15 lớp (`--lop0`), 100 epoch,
   batch 8, crop 512, AdamW lr 6e-5, chấm `last.pt`. Cấu hình đủ trong `runs/*/config.json`.
-- **Lệnh train lại cho việc 4:**
+- **Lệnh cho việc 4** (Kaggle T4; FMB lấy từ dataset Kaggle riêng tư Mân chia sẻ, đặt `SAGE_FMB` trỏ tới đó; batch 8 vừa T4):
   ```bash
   cd code
   export SAGE_FMB=<thư mục FMB> SAGE_MAN=../manifests/fmb_goc SAGE_ANH=<nơi ghi ảnh> SAGE_RUNS=<nơi ghi runs> PYTHONUTF8=1
   python xuat_anh.py --bien_the tb
-  python train_seg.py --bien_the tb --model b3 --seed 0 --gop_dev --lop0
-  python eval_seg.py --run $SAGE_RUNS/tb_b3_s0_1220_15lop --ckpt last
+  python train_seg.py --bien_the tb --model b3 --seed 3 --gop_dev --lop0
+  python eval_seg.py --run $SAGE_RUNS/tb_b3_s3_1220_15lop --ckpt last
   ```
 </details>
