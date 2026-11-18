@@ -1,0 +1,8 @@
+__pycache__/
+*.pt
+*.pth
+anh/
+runs/
+!thi_nghiem/**/runs/
+*.zip
+.ipynb_checkpoints/

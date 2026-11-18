@@ -1,0 +1,36 @@
+b3 | tập test | 273 ảnh (bỏ ảnh rò: 7) | 36 khối | seed [0, 1, 2] | ckpt last
+
+== mIoU_co_mat theo seed
+          s0     s1     s2     TB    SD  mIoU_7_TB
+vis    62.07  62.56  63.02  62.55  0.48      73.08
+tb     64.27  63.91  65.09  64.42  0.60      75.62
+sage   62.62  63.07  64.42  63.37  0.94      74.40
+nosam  62.89  64.07  64.46  63.81  0.81      74.56
+ir     54.66  56.64  57.93  56.41  1.64      71.86
+
+== Hiệu số theo cặp seed (B = 2000); kết luận theo thang 3 mức
+       cap  d_tb  d_s0  d_s1  d_s2  CI_anh_lo  CI_anh_hi  CI_anh_seed_lo  CI_anh_seed_hi  so_seed_duong  d_mIoU7_tb       ket_luan
+   tb−sage  1.05  1.65  0.84  0.67       0.18       1.82           -0.21            2.03              3        1.22  hơn nhất quán
+    tb−vis  1.87  2.20  1.35  2.07      -0.05       3.89           -0.22            3.93              3        2.54 chưa phân biệt
+  sage−vis  0.82  0.55  0.51  1.40      -0.93       3.07           -1.00            3.24              3        1.32 chưa phân biệt
+sage−nosam -0.44 -0.28 -1.00 -0.04      -0.94       0.09           -1.16            0.37              0       -0.16 chưa phân biệt
+  nosam−tb -0.61 -1.37  0.16 -0.63      -1.22       0.02           -1.42            0.48              1       -1.06 chưa phân biệt
+
+== IoU từng lớp (TB seed, bỏ pixel unlabeled) – số phụ
+                vis    tb  sage  nosam    ir
+road           88.5  88.0  87.8   88.4  86.5
+sidewalk       45.0  43.8  43.9   45.5  31.5
+building       82.6  84.8  84.6   84.2  82.1
+traffic_light  37.7  39.5  41.2   38.9  19.7
+traffic_sign   77.3  79.1  78.2   78.9  65.7
+vegetation     86.3  87.9  87.4   87.4  83.1
+sky            94.7  95.7  95.5   95.4  94.4
+person         59.1  69.8  70.0   70.2  70.9
+car            79.9  78.8  79.0   79.6  76.3
+truck          28.9  35.5  33.4   31.9  18.3
+bus            37.9  40.9  33.8   33.3  38.3
+motorcycle     45.7  42.4  38.1   45.0  35.7
+bicycle         NaN   NaN   NaN    NaN   NaN
+pole           49.6  51.2  50.9   50.9  30.8
+
+Ghi ..\thi_nghiem\TN01_quy_tac_cham\runs\so_sanh_cap_test_b3.csv
