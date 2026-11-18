@@ -53,7 +53,7 @@ nhưng phải nằm trong **dao động seed**: lệch so với số của ngư�
 - Giới hạn: …
 ```
 
-## 5. Phiếu xác nhận (người kiểm điền vào cuối README thí nghiệm)
+## 5. Mẫu phiếu (người kiểm dán vào Issue rồi điền)
 
 ```markdown
 ## Phiếu kiểm
@@ -63,3 +63,16 @@ nhưng phải nằm trong **dao động seed**: lệch so với số của ngư�
 - Checklist: 1 … 8: …
 - Kết luận: ĐỒNG Ý / CẦN SỬA (…)
 ```
+
+## 6. Sau khi có phiếu – lưu kết quả trên repo
+
+**Nếu ĐỒNG Ý:**
+1. Người làm chép phiếu vào mục "Phiếu kiểm" trong README thí nghiệm, ghi link Issue.
+2. Sửa cột trạng thái trong bảng thí nghiệm ở README chính thành **"Đã kiểm – đồng ý"** kèm link Issue.
+3. Đóng Issue.
+
+**Nếu CẦN SỬA:**
+1. Người làm sửa, rồi trả lời trong cùng Issue: đã sửa gì, kèm link commit.
+2. Người kiểm xem lại và trả lời ĐỒNG Ý hoặc CẦN SỬA tiếp. Lặp lại tới khi đồng ý.
+3. Trong lúc chờ, trạng thái ở README chính ghi **"Đang sửa"** kèm link Issue.
+4. Khi đồng ý thì làm như trường hợp ĐỒNG Ý ở trên. Lịch sử trao đổi giữ nguyên trong Issue để làm bằng chứng.
