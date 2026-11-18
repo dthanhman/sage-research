@@ -1,0 +1,75 @@
+name: Phiếu kiểm thí nghiệm
+description: Người kiểm điền kết quả kiểm chéo cho một thí nghiệm (TNxx)
+title: "[Phiếu kiểm] TNxx"
+labels: ["phieu-kiem"]
+body:
+  - type: input
+    id: thi_nghiem
+    attributes:
+      label: Thí nghiệm
+      description: Mã thí nghiệm đang kiểm
+      placeholder: TN01
+    validations:
+      required: true
+  - type: input
+    id: nguoi_kiem
+    attributes:
+      label: Người kiểm
+      placeholder: Lộc Lớn
+    validations:
+      required: true
+  - type: dropdown
+    id: chay_lai
+    attributes:
+      label: "Việc 1 – Chạy lại từ output có sẵn: số có khớp không?"
+      options:
+        - Khớp hoàn toàn
+        - Không khớp (ghi chỗ lệch bên dưới)
+        - Không chạy được (ghi lỗi bên dưới)
+    validations:
+      required: true
+  - type: textarea
+    id: chay_lai_ghi_chu
+    attributes:
+      label: Ghi chú việc 1
+      description: Dán dòng lệch hoặc thông báo lỗi nếu có
+      render: text
+  - type: textarea
+    id: cau_hoi
+    attributes:
+      label: Việc 2 – Trả lời các câu hỏi trong README thí nghiệm
+      description: Mỗi câu một dòng – đồng ý, hoặc đề xuất sửa + lý do
+      value: |
+        1.
+        2.
+        3.
+        4.
+        5.
+    validations:
+      required: true
+  - type: textarea
+    id: doc_code
+    attributes:
+      label: Việc 3 – Đọc code
+      description: Lỗi tìm được (tên file, dòng, mô tả). Không thấy lỗi thì ghi "Không thấy lỗi".
+    validations:
+      required: true
+  - type: textarea
+    id: train_lai
+    attributes:
+      label: Việc 4 – Train lại 1 seed (nếu có làm)
+      description: Seed nào, ra số bao nhiêu, lệch bao nhiêu so với số gốc. Không làm thì ghi "Không làm".
+      value: "Không làm"
+  - type: dropdown
+    id: ket_luan
+    attributes:
+      label: Kết luận
+      options:
+        - ĐỒNG Ý
+        - CẦN SỬA
+    validations:
+      required: true
+  - type: textarea
+    id: can_sua
+    attributes:
+      label: Cần sửa gì (nếu chọn CẦN SỬA)

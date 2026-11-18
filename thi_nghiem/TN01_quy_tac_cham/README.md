@@ -51,7 +51,7 @@ Mỗi lần chạy có file `test_nham_last.npz` = ma trận nhầm lẫn **củ
 | 2 | Đọc luật, trả lời 5 câu hỏi ở mục 6 | ~20 phút |
 | 3 | Đọc code: hàm `muc()` và phần bootstrap trong `so_sanh_cap.py`, hàm `cac_miou()` trong `chung.py` | ~20 phút |
 | 4 | *(Tùy chọn – Mân quyết)* Train lại `tb` seed 0 trên Kaggle, xem có ra gần 64,27 không (lệch ≤ 1,2) | ~2,6 h GPU |
-| 5 | Điền phiếu ở mục 7, gửi bằng Pull Request hoặc Issue | ~5 phút |
+| 5 | Gửi phiếu: tab **Issues → New issue → "Phiếu kiểm thí nghiệm"** (form có sẵn các ô ở mục 7) | ~5 phút |
 
 **Lệnh cho việc 1** (cần Python có numpy, pandas):
 
