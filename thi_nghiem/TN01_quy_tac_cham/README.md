@@ -45,6 +45,8 @@ Mỗi lần chạy có file `test_nham_last.npz` = ma trận nhầm lẫn **củ
 
 ## 4. Việc của Lộc Lớn
 
+👉 **Làm theo từng bước:** [HUONG_DAN_KIEM.md](HUONG_DAN_KIEM.md)
+
 | # | Việc | Thời gian |
 |---|---|---|
 | 1 | Chạy lại công cụ (lệnh bên dưới), so với kết quả đúng ở mục 5 | ~5 phút |
