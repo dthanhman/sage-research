@@ -1,6 +1,6 @@
 # Quy trình kiểm chéo
 
-Vòng: **Mân → Quân → Lộc Bé → Lộc Lớn → Mân** (người kế tiếp kiểm thí nghiệm của người trước).
+Vòng của nhóm: Mân → Quân → Lộc Bé → Lộc Lớn → Mân. Trong repo này: **Mân làm, Quân kiểm**.
 
 **Khi nào cần kiểm chéo:** thí nghiệm có số đưa vào báo cáo/slide, hoặc dùng để ra quyết định (chọn phương án, chốt tiêu chí, bỏ một hướng).
 Thử nhanh để dò hướng thì không cần – ghi lại trong nhật ký của người làm là đủ.
@@ -14,7 +14,7 @@ Mỗi thí nghiệm là một thư mục `thi_nghiem/TNxx_ten_ngan/` gồm:
 - Code đúng phiên bản đã chạy (đã có trong `code/`; nếu dùng code riêng thì để trong thư mục thí nghiệm).
 - Ghi rõ **seed nào** để người kiểm chạy lại.
 
-Rồi mở Pull Request (hoặc báo trong nhóm), gắn tên người kiểm.
+Rồi báo người kiểm; người kiểm trả lời bằng Pull Request hoặc Issue trên repo này.
 
 ## 2. Người kiểm: làm 2 bước
 

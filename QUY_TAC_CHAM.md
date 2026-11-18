@@ -7,7 +7,7 @@
 - Đường màu: mọi biến thể = Y mới + CrCb của VIS (OpenCV), đã kiểm 18/11 (`code/xuat_anh.py`).
 
 ## Số seed
-- Vòng cuối B3 test: **5 seed** cho phương án nhóm, TB, SAGE (tb, sage đã có seed 0–2 → thêm seed 3, 4).
+- Vòng cuối B3 test: **5 seed** cho phương án cải tiến, TB, SAGE (tb, sage đã có seed 0–2 → thêm seed 3, 4).
 - So **theo cặp seed**: cùng seed segmentation cho mọi phương án.
 
 ## Cách gọi kết quả (thang 3 mức) – `code/so_sanh_cap.py`
@@ -19,7 +19,7 @@ d_s = mIoU(A, s) − mIoU(B, s); CI_anh = bootstrap khối 10 ảnh id liền; C
 | Hơn nhất quán | d_tb > 0, **mọi seed** d_s > 0, cận dưới CI_anh > 0 | "hơn nhất quán qua mọi seed, mức nhỏ" |
 | Chưa phân biệt | còn lại | báo đúng như vậy |
 
-**Phương án nhóm được tính là cải thiện** khi đạt ít nhất "hơn nhất quán" so với **cả TB lẫn SAGE**, và qua rào chắn.
+**Phương án cải tiến được tính là cải thiện** khi đạt ít nhất "hơn nhất quán" so với **cả TB lẫn SAGE**, và qua rào chắn.
 
 ## Rào chắn
 - Không dùng SAM (kể cả lúc train).

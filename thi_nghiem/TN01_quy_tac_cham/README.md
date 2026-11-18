@@ -22,7 +22,7 @@
 
 1. Vòng cuối **5 seed** (B3 test) – đủ chưa, hay quá tốn quota?
 2. Mức **"hơn nhất quán"** (mọi seed dương + CI ảnh không chứa 0) – có quá dễ không? Có nên đòi thêm điều kiện?
-3. Phương án nhóm phải **hơn cả TB lẫn SAGE** – đồng ý không?
+3. Phương án cải tiến phải **hơn cả TB lẫn SAGE** – đồng ý không?
 4. Metric chính **mIoU_co_mat, 273 ảnh** (bỏ 7 ảnh rò, 13 lớp có mặt) – giữ hay đổi?
 5. Rào chắn chỉ số ghép: sàn = SAGE − 2 × SD 5 seed nosam – hợp lý không?
 
