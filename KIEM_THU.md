@@ -1,6 +1,6 @@
 # Quy trình kiểm chéo
 
-Vòng của nhóm: Mân → Quân → Lộc Bé → Lộc Lớn → Mân. Trong repo này: **Mân làm, Quân kiểm**.
+Vòng của nhóm: Mân → Quân → Lộc Bé → Lộc Lớn → Mân. Trong repo này: **Mân làm, Lộc Lớn kiểm**.
 
 **Khi nào cần kiểm chéo:** thí nghiệm có số đưa vào báo cáo/slide, hoặc dùng để ra quyết định (chọn phương án, chốt tiêu chí, bỏ một hướng).
 Thử nhanh để dò hướng thì không cần – ghi lại trong nhật ký của người làm là đủ.

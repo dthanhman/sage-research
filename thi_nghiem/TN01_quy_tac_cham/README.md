@@ -1,11 +1,11 @@
 # TN01 – Quy tắc chấm mIoU và script so cặp seed
 
-- Người làm: Mân | Người kiểm: **Quân** | Ngày: 18/11/2026
+- Người làm: Mân | Người kiểm: **Lộc Lớn** | Ngày: 18/11/2026
 - Câu hỏi: chênh giữa các cách ghép (~1 điểm mIoU) cỡ bằng dao động seed. Cần một cách chấm **chốt trước**,
   có CI cho **hiệu số**, để biết khi nào được nói "phương án A hơn B".
 - Quy tắc: [QUY_TAC_CHAM.md](../../QUY_TAC_CHAM.md). Script: [`code/so_sanh_cap.py`](../../code/so_sanh_cap.py).
 
-## Việc của Quân (người kiểm)
+## Việc của Lộc Lớn (người kiểm)
 
 | # | Việc | Cần gì | Thời gian | Nộp lại |
 |---|---|---|---|---|
@@ -84,9 +84,9 @@ Số gốc: tb seed 0 = **64,27** (273 ảnh, `mIoU_co_mat`). Đạt nếu lệc
 - Với 3 seed, tầng seed của bootstrap còn thô → vòng cuối sẽ dùng 5 seed (QUY_TAC_CHAM.md).
 - Các run này train trên 1.220 ảnh của split cũ; split nhóm mới (scene_v1) dùng cho khám phá phương án.
 
-## Phiếu kiểm (Quân điền)
+## Phiếu kiểm (Lộc Lớn điền)
 
-- Người kiểm: Quân | Ngày: …
+- Người kiểm: Lộc Lớn | Ngày: …
 - Việc 1 – trả lời 5 câu hỏi: 1 … / 2 … / 3 … / 4 … / 5 …
 - Việc 2 – Bước A: khớp / không khớp (…)
 - Việc 3 – Soát code: không thấy lỗi / lỗi: …

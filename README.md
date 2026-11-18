@@ -6,8 +6,8 @@ Bài gốc: *Every SAM Drop Counts* (SAGE, CVPR 2025), code gốc `RollingPlain/
 
 ## Kiểm chéo
 
-Theo vòng kiểm chéo của nhóm (Mân → Quân → Lộc Bé → Lộc Lớn → Mân), thí nghiệm trong repo này
-do **Quân** kiểm lại.
+Thí nghiệm trong repo này
+do **Lộc Lớn** kiểm lại.
 
 Quy trình, checklist và phiếu xác nhận nằm trong [KIEM_THU.md](KIEM_THU.md).
 Mức kiểm đã thống nhất: **chấm lại từ output đã lưu + chạy lại 1 seed**.
@@ -50,4 +50,4 @@ Trên Windows cần `PYTHONUTF8=1` (in tiếng Việt).
 
 | Mã | Nội dung | Người làm | Người kiểm | Trạng thái |
 |---|---|---|---|---|
-| [TN01](thi_nghiem/TN01_quy_tac_cham/) | Quy tắc chấm + script so cặp seed, kiểm trên B3 test (vis, tb, sage, nosam, ir × 3 seed) | Mân | Quân | Chờ kiểm |
+| [TN01](thi_nghiem/TN01_quy_tac_cham/) | Quy tắc chấm + script so cặp seed, kiểm trên B3 test (vis, tb, sage, nosam, ir × 3 seed) | Mân | Lộc Lớn | Chờ kiểm |
