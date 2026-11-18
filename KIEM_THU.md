@@ -14,8 +14,8 @@ Mỗi thí nghiệm là một thư mục `thi_nghiem/TNxx_ten_ngan/` gồm:
 - Code đúng phiên bản đã chạy (đã có trong `code/`; nếu dùng code riêng thì để trong thư mục thí nghiệm).
 - Ghi rõ **seed nào** để người kiểm chạy lại.
 
-Rồi báo người kiểm. Người kiểm gửi kết quả bằng **Issues → New issue → "Phiếu kiểm thí nghiệm"** (không cần quyền gì, repo công khai).
-Người làm chép phiếu vào README thí nghiệm, ghi link Issue, rồi đóng Issue.
+Rồi **người làm mở một Issue "Nhờ kiểm TNxx"** và gửi link cho người kiểm. Người kiểm **trả lời phiếu ngay dưới Issue đó**
+(repo công khai, không cần quyền gì). Người làm chép phiếu vào README thí nghiệm, ghi link Issue, rồi đóng Issue.
 
 ## 2. Người kiểm: làm 2 bước
 
