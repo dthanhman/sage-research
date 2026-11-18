@@ -23,7 +23,13 @@ d_s = mIoU(A, s) − mIoU(B, s); CI_anh = bootstrap khối 10 ảnh id liền; C
 
 ## Rào chắn
 - Không dùng SAM (kể cả lúc train).
-- Chỉ số ghép (SCD, MS-SSIM, Q_ABF) không dưới sàn: sàn = SAGE − 2 × SD 5 seed nosam trên val 151 (thí nghiệm chốt sàn, sẽ thêm vào `thi_nghiem/`).
+- **Ảnh không quá xấu** (sửa 18/11, Mân chọn – xem lý do bên dưới):
+  - Rào chắn cứng: **MS-SSIM ≥ 99%** và **Q_ABF ≥ 98%** của SAGE (sàn = SAGE − 2 × SD 5 seed nosam trên val 151, làm tròn 1%).
+  - Kèm bắt buộc: tỉ lệ điểm ảnh cháy trắng (≥ 250) và hình so sánh ca đêm / khói / chạng vạng.
+  - **SCD chỉ báo cáo kèm**, không loại. SCD < 85% SAGE (thấp hơn mọi seed nosam) → ghi cảnh báo "có thể chép một nguồn".
+  - Lý do bỏ SCD khỏi rào cứng (có TRƯỚC và độc lập với kết quả M11): (1) chính Student bỏ SAM (nosam) rớt SCD ở cả 5 seed
+    (86–92%, sàn SCD sẽ là 96%) → rào SCD loại mọi phương án không SAM trước khi xét mIoU; (2) kiểm 18/11 (cai_tien/danh_doi):
+    SCD không dự đoán mIoU. Minh bạch: quyết định này đưa ra SAU khi đã biết SCD của m11_kp (89,1%).
 
 ## Số phụ (chốt luôn, KHÔNG dùng để chọn phương án)
 mIoU 7 lớp của bài, IoU từng lớp, nhóm ảnh tối/vừa/sáng, dòng trần 4 kênh (RGB + IR) khi có.

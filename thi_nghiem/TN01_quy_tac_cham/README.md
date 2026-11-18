@@ -24,7 +24,7 @@
 2. Mức **"hơn nhất quán"** (mọi seed dương + CI ảnh không chứa 0) – có quá dễ không? Có nên đòi thêm điều kiện?
 3. Phương án cải tiến phải **hơn cả TB lẫn SAGE** – đồng ý không?
 4. Metric chính **mIoU_co_mat, 273 ảnh** (bỏ 7 ảnh rò, 13 lớp có mặt) – giữ hay đổi?
-5. Rào chắn chỉ số ghép: sàn = SAGE − 2 × SD 5 seed nosam – hợp lý không?
+5. Rào chắn "ảnh không quá xấu": MS-SSIM ≥ 99%, Q_ABF ≥ 98% SAGE + nhìn mắt; **SCD chỉ báo kèm** (vì nosam tự rớt SCD) – hợp lý không?
 
 ## Dữ liệu dùng để kiểm script
 
