@@ -5,6 +5,27 @@
   có CI cho **hiệu số**, để biết khi nào được nói "phương án A hơn B".
 - Quy tắc: [QUY_TAC_CHAM.md](../../QUY_TAC_CHAM.md). Script: [`code/so_sanh_cap.py`](../../code/so_sanh_cap.py).
 
+## Việc của Quân (người kiểm)
+
+| # | Việc | Cần gì | Thời gian | Nộp lại |
+|---|---|---|---|---|
+| 1 | **Đọc và góp ý quy tắc** – trả lời 5 câu hỏi bên dưới | Đọc QUY_TAC_CHAM.md | ~20 phút | Trả lời từng câu (đồng ý / đề xuất sửa + lý do) |
+| 2 | **Bước A** – chạy lại script trên output có sẵn, so với `ket_qua/so_sanh_cap_test_b3.txt` | Python, không cần GPU | ~5 phút | Khớp / không khớp (dán dòng lệch nếu có) |
+| 3 | **Soát code** – đọc hàm `muc()` và phần bootstrap trong `so_sanh_cap.py`, `cac_miou()` trong `chung.py` | Đọc code | ~20 phút | Lỗi tìm được (nếu có) |
+| 4 | **Bước B (tùy chọn, nếu còn quota Kaggle)** – train lại tb seed 0 | Kaggle T4, FMB | ~2,6 h | Số mIoU_co_mat 273 ảnh, lệch so với 64,27 |
+| 5 | **Điền phiếu kiểm** ở cuối file này | – | ~5 phút | Phiếu + kết luận ĐỒNG Ý / CẦN SỬA |
+
+**Nộp ở đâu:** mở Pull Request sửa file này (điền phiếu + câu trả lời), hoặc mở Issue trên repo nếu không quen PR.
+**Hạn:** …
+
+### 5 câu hỏi về quy tắc (việc 1)
+
+1. Vòng cuối **5 seed** (B3 test) – đủ chưa, hay quá tốn quota?
+2. Mức **"hơn nhất quán"** (mọi seed dương + CI ảnh không chứa 0) – có quá dễ không? Có nên đòi thêm điều kiện?
+3. Phương án nhóm phải **hơn cả TB lẫn SAGE** – đồng ý không?
+4. Metric chính **mIoU_co_mat, 273 ảnh** (bỏ 7 ảnh rò, 13 lớp có mặt) – giữ hay đổi?
+5. Rào chắn chỉ số ghép: sàn = SAGE − 2 × SD 5 seed nosam – hợp lý không?
+
 ## Dữ liệu dùng để kiểm script
 
 Kết quả B3 đã có (chạy trên Kaggle T4 ngày 12–15/11):
@@ -62,3 +83,13 @@ Số gốc: tb seed 0 = **64,27** (273 ảnh, `mIoU_co_mat`). Đạt nếu lệc
 
 - Với 3 seed, tầng seed của bootstrap còn thô → vòng cuối sẽ dùng 5 seed (QUY_TAC_CHAM.md).
 - Các run này train trên 1.220 ảnh của split cũ; split nhóm mới (scene_v1) dùng cho khám phá phương án.
+
+## Phiếu kiểm (Quân điền)
+
+- Người kiểm: Quân | Ngày: …
+- Việc 1 – trả lời 5 câu hỏi: 1 … / 2 … / 3 … / 4 … / 5 …
+- Việc 2 – Bước A: khớp / không khớp (…)
+- Việc 3 – Soát code: không thấy lỗi / lỗi: …
+- Việc 4 – Bước B: không làm / seed 0 = …, lệch … → đạt / không đạt
+- Checklist KIEM_THU.md mục 3 (1–8): …
+- Kết luận: ĐỒNG Ý / CẦN SỬA (…)
